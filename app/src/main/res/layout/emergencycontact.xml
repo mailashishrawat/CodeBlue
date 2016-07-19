@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+    <ImageView
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:id="@+id/Image_EmergencyContact"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/emergencycontactName"
+        android:layout_width="match_parent"
+         android:text="emergencycontactName"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_below="@id/emergencycontactName"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ecPhone"
+            android:layout_width="wrap_content"
+            android:text="9886660275"
+             android:layout_height="match_parent"
+            android:layout_gravity="left"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/result_points"
+                android:id="@+id/emergencyContactPhone"
+                android:background="@drawable/ic_call_white_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

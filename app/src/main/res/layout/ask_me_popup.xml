@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/queryRecord"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/microphone"
+        android:clickable="true"
+        android:importantForAccessibility="yes"
+        android:contentDescription="@string/record_button" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/queryText"
+        android:hint="enter your query or record"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/queryBtn"
+        android:layout_toStartOf="@+id/queryBtn"
+        android:contentDescription="@string/enter_query"
+        android:importantForAccessibility="yes" />
+    <requestFocus />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/querySendButton"
+        android:id="@+id/queryBtn"
+        android:layout_below="@+id/queryRecord"
+        android:layout_alignRight="@+id/queryRecord"
+        android:layout_alignEnd="@+id/queryRecord"
+        android:importantForAccessibility="yes"
+        android:contentDescription="@string/send_query"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/white"
+        android:focusable="false"
+        tools:targetApi="ice_cream_sandwich" />
+
+</RelativeLayout>

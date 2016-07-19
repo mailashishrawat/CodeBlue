@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+    <item
+        android:id="@+id/detailsBtn"
+        android:title="Details"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:onClick="detailsActivity"/>
+    <!--<item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_settings"/> -->
+    <item android:id="@+id/aboutUs"
+        android:title="About Us"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="AboutUsActivity"/>
+    <item android:id="@+id/feedbackItem"
+        android:title="Feedback"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="FeedbackActivity"/>
+
+
+</menu>

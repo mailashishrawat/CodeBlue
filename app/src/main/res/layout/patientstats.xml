@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+   >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_stats_temp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/image_temperature"
+            android:layout_gravity="top"
+            android:id="@+id/image_temperature"/>
+        <TextView
+            android:id="@+id/tempDetails"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:text="temprature stats:"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_stats_pulse"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight=".25"
+        card_view:cardCornerRadius="4dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/image_pulse"
+            android:layout_weight=".25"
+            android:layout_gravity="left"
+            android:id="@+id/image_pulse"/>
+        <TextView
+            android:id="@+id/pulseDetails"
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_stats_bp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        card_view:cardCornerRadius="4dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/image_bp"
+            android:layout_weight=".25"
+            android:layout_gravity="left"
+            android:id="@+id/image_bp"/>
+        <TextView
+            android:id="@+id/bpDetails"
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_stats_active"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        card_view:cardCornerRadius="4dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/image_active"
+            android:layout_weight=".25"
+            android:layout_gravity="left"
+            android:id="@+id/image_active"/>
+        <TextView
+            android:id="@+id/activityDetails"
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/ImportantNote"
+        android:text="Patient is allergic to ibrufin etc. Also as he is convalisng there shoudl be a high dose of pro"
+        android:layout_height="40dp" />
+</LinearLayout>

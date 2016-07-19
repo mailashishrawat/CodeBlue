@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="@attr/actionBarTabStyle">@style/tabStyle</item>
+    </style>
+
+    <style name="tabStyle" parent="Base.Theme.AppCompat.Light">
+
+        <!--<item name="android:background">@drawable/iis_background_image</item>
+        <item name="android:colorBackground">@android:color/tab_indicator_text</item>-->
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:background">@drawable/tab_indicator_ab_example</item>
+        <!--<item name="android:background">#FF4444</item>-->
+    </style>
+    <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small" tools:targetApi="ice_cream_sandwich">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small" tools:targetApi="ice_cream_sandwich">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

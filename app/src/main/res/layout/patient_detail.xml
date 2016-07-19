@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/ProgramName"
+          android:layout_width="wrap_content"
+            android:layout_height="20dp"
+        android:layout_gravity="center"
+
+            android:text="Program: Post surgery"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Postal address"
+            android:layout_gravity="center"
+
+            android:id="@+id/Postaladress"
+            android:layout_below="@+id/ProgramName" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:layout_height="180dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:id="@+id/Image_Patient"/>
+                       </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/Patientdetails_info"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="top"
+
+                    android:layout_height="180dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                             android:text="Weight: 50kg"
+                            android:id="@+id/Weight"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/Weight"
+                            android:text="Height:164 cm"
+                            android:id="@+id/Height" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/Height"
+                            android:hint="Phone number: 988768393"
+                            android:id="@+id/PhoneNo" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/PhoneNo"
+                            android:text="Date of birth : May 21 1988"
+                            android:id="@+id/dob" />
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
